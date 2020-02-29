@@ -14,7 +14,9 @@ function App() {
       <GlobalStyle />
       <Container>
         <Button>Hello</Button>
-        <Button danger>Hello</Button>
+        <Button danger rotationTime={5}>
+          Hello
+        </Button>
         <Anchor gref="http://google.com">Go to google</Anchor>
       </Container>
     </>
@@ -43,7 +45,7 @@ const Button = styled.button`
   ${props => {
     if (props.danger) {
       return css`
-        animation: ${rotation} 2s linear infinite;
+        animation: ${rotation} ${props.rotationTime}s linear infinite;
       `;
     }
   }}
