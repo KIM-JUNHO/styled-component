@@ -15,6 +15,7 @@ function App() {
       <Container>
         <Button>Hello</Button>
         <Button danger>Hello</Button>
+        <Anchor gref="http://google.com">Go to google</Anchor>
       </Container>
     </>
   );
@@ -40,5 +41,6 @@ const Button = styled.button`
   }
   background-color: ${props => (props.danger ? '#e74c3c' : '#2ecc71')};
 `;
+const Anchor = Button.withComponent('a');
 
 export default App;
