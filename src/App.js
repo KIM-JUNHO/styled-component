@@ -3,12 +3,18 @@ import styled from 'styled-components';
 
 function App() {
   return (
-    <Fragment>
+    <Container>
       <Button danger>Hello</Button>
       <Button>Hello</Button>
-    </Fragment>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  background-color: #bdc3c7;
+`;
 
 const Button = styled.button`
   border-radius: 50px;
