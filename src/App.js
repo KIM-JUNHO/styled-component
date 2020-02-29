@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 function App() {
   return (
     <Container>
-      <Button danger>Hello</Button>
       <Button>Hello</Button>
+      <Button danger>Hello</Button>
     </Container>
   );
 }
@@ -13,7 +13,7 @@ function App() {
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #bdc3c7;
+  background-color: pink;
 `;
 
 const Button = styled.button`
@@ -28,6 +28,7 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
+  background-color: ${props => (props.danger ? '#e74c3c' : '#2ecc71')};
 `;
 
 export default App;
