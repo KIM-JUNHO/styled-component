@@ -8,11 +8,15 @@ body {
 }
 `;
 
+const Input = styled.input``;
+
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Container></Container>
+      <Container>
+        <Input placeholder="hello"></Input>
+      </Container>
     </>
   );
 }
