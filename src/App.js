@@ -1,7 +1,8 @@
 import React from 'react';
+import './App.css';
 
 function App() {
-  return <div className="App">Learn React</div>;
+  return <button className="button">Hello</button>;
 }
 
 export default App;
