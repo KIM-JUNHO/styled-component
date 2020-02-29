@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 
 function App() {
-  return <button className="button">Hello</button>;
+  return (
+    <Fragment>
+      <button className="button button--success">Hello</button>;
+      <button className="button button--danger">Hello</button>;
+    </Fragment>
+  );
 }
 
 export default App;
