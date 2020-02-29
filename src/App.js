@@ -1,21 +1,27 @@
 import React, { Fragment } from 'react';
-import './App.css';
+import styled from 'styled-components';
 
 function App() {
   return (
     <Fragment>
-      <Button danger />
-      <Button />
+      <Button danger>Hello</Button>
+      <Button>Hello</Button>
     </Fragment>
   );
 }
 
-const Button = ({ danger }) => (
-  <button
-    className={danger ? 'button button--danger' : 'button button--success'}
-  >
-    Hello
-  </button>
-);
+const Button = styled.button`
+  border-radius: 50px;
+  padding: 5px;
+  min-width: 120px;
+  color: white;
+  font-weight: 600;
+  -webkit-appearance: none;
+  cursor: pointer;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+`;
 
 export default App;
